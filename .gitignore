@@ -3,7 +3,6 @@
 .hg
 .svn
 *~.nib
-vendor/*
 log/*
 
 
