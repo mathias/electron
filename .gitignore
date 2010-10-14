@@ -4,5 +4,6 @@
 .svn
 *~.nib
 log/*
-
+db/redis/*/redis.pid
+webrat.log
 
