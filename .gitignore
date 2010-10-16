@@ -6,4 +6,4 @@
 log/*
 db/redis/*/redis.pid
 webrat.log
-
+.sass-cache/
