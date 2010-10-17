@@ -1,0 +1,22 @@
+%h1 Create a new Project
+
+%form(action="/projects" method="post")
+  %p
+    %label(for="project_link") URL
+    %span.example eg: "http://monkrb.com"
+    %br
+    %input(name="project[link]" id="project_link")
+    
+  %p
+    %label(for="project_name") Name of Project
+    %br
+    %input(name="project[name]" id="project_name" value="#{@project.name}")
+  
+  %p
+    %label(for="project_description") A brief description
+    %br
+    %input(name="project[description]" id="project_description")  
+    
+  %p
+    %button(type="submit")
+      Submit Project

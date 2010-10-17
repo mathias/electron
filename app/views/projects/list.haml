@@ -1,0 +1,24 @@
+.list
+  %h2 Projects
+  
+  %p
+    %a(href="/projects/new") Make a new project
+    
+  - if !(@projects.nil?)
+    %ul
+      - @projects.each do |project|
+        %li
+          = project.name
+          %br
+          %a(href="http://#{project.link}")
+            = project.link
+          %br
+          = project.description
+          = project.published?
+          %br
+          %a(href="/projects/delete/#{project.id}") Delete
+          %a(href="/projects/publish/#{project.id}") Publish
+          %br
+  - else
+    %p
+      = message
