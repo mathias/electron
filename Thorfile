@@ -53,6 +53,16 @@ class Monk < Thor
     end
   end
 
+  desc "seed", "Seeds the database with random projects"
+  def seed
+    init
+    Ohm.flush
+    
+    100.times do
+      Project.spawn(:datetime => (Time.now - rand(24) * 60 * 60).strftime("%Y-%m-%d %H:%M:%S"))
+    end
+  end
+
 private
 
   def self.source_root
