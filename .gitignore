@@ -4,6 +4,6 @@
 .svn
 *~.nib
 log/*
-db/redis/*/redis.pid
+db/redis/*
 webrat.log
 .sass-cache/
