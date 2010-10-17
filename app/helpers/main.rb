@@ -6,9 +6,9 @@ class Main
     #
     # @example A helper method for date formatting.
     #
-    #   def format_date(date, format = "%d/%m/%Y")
-    #     date.strftime(format)
-    #   end
+    def format_date(date, format = "%d/%m/%Y")
+      date.strftime(format)
+    end
 
     # Generate HAML and escape HTML by default.
     def haml(template, options = {}, locals = {})
