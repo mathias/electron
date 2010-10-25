@@ -18,10 +18,12 @@
             = project.link
           %br
           = project.description
-          = project.published?
           %br
           %a(href="/projects/delete/#{project.id}") Delete
-          %a(href="/projects/publish/#{project.id}") Publish
+          - if (project.published?)
+            %a(href="/projects/publish/#{project.id}") Publish
+          - else
+            %a(href="/projects/unpublish/#{project.id}") Unpublish
           %br
   - else
     %p

@@ -29,9 +29,9 @@ class Project < Ohm::Model
   
   def published?
     if (published.to_i==1)
-      return "Published"
+      return true
     else
-      return "Unpublished"
+      return false
     end
   end
 

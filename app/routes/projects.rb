@@ -15,7 +15,7 @@ class Main
     
     if @project.valid?
       @project.create
-      session[:notice] = "Your project has been added"
+      session[:notice] = "#{@project.name} has been added"
       redirect "/projects"
     else
       session[:error] = "Project did not validate"
@@ -39,6 +39,20 @@ class Main
     @project = Project[params[:id]]
     @project.published = 1
     @project.save
+    session[:notice] = "#{@project.name} has been published"
     redirect "/projects"
+  end
+  
+  get "/projects/unpublish/:id" do
+    @project = Project[params[:id]]
+    if @project.published == 1
+      @project.published = 0
+      @project.save
+      session[:notice] = "#{@project.name} has been unpublished"
+      redirect "/projects"
+    else
+      session[:error] = "#{@project.name} is not published."
+      redirect "/projects"
+    end
   end
 end
