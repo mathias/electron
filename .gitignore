@@ -4,6 +4,10 @@
 .svn
 *~.nib
 log/*
+config/
 db/redis/*
 webrat.log
 .sass-cache/
+
+/config.ru
+/config
