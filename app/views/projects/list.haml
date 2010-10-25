@@ -20,7 +20,7 @@
           = project.description
           %br
           %a(href="/projects/delete/#{project.id}") Delete
-          - if (project.published?)
+          - if (!project.published?)
             %a(href="/projects/publish/#{project.id}") Publish
           - else
             %a(href="/projects/unpublish/#{project.id}") Unpublish

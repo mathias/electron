@@ -45,7 +45,7 @@ class Main
   
   get "/projects/unpublish/:id" do
     @project = Project[params[:id]]
-    if @project.published == 1
+    if @project.published?
       @project.published = 0
       @project.save
       session[:notice] = "#{@project.name} has been unpublished"

@@ -28,7 +28,7 @@ class Project < Ohm::Model
   end
   
   def published?
-    if (published.to_i==1)
+    if (self.published.to_i==1)
       return true
     else
       return false
