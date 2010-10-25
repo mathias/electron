@@ -18,6 +18,7 @@ class Main
       session[:notice] = "Your project has been added"
       redirect "/projects"
     else
+      session[:error] = "Project did not validate"
       haml :"projects/new"
     end
   end
