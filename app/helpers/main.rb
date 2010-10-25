@@ -23,5 +23,21 @@ class Main
     def partial(template, locals = {})
       haml(template, {:layout => false}, locals)
     end
+
+    def show_flash
+      if session[:notice]
+        @msg = session[:notice]
+        session[:notice] = false
+        haml :flash, {:layout => :flash}
+      end
+    end
+    
+    def show_error
+      if session[:error]
+        @msg = session[:error]
+        session[:error] = false
+        haml :error, {:layout => :error}
+      end
+    end
   end
 end

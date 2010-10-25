@@ -1,6 +1,10 @@
 #project
   %h1= @project.name
   
+  %div
+    != show_flash
+    != show_error
+  
   %p.url
     %a(href=@url title=@url)= @url
     

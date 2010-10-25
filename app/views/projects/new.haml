@@ -1,5 +1,9 @@
 %h1 Create a new Project
 
+%div
+  != show_flash
+  != show_error
+
 %form(action="/projects" method="post")
   %p
     %label(for="project_link") URL

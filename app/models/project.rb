@@ -11,7 +11,6 @@ class Project < Ohm::Model
     assert_present(:name)
     assert_present(:link)
     assert_present(:description)
-    assert_numeric(:published)
   end
   
   def create
