@@ -28,18 +28,15 @@ class Project < Ohm::Model
   end
   
   def published?
-    if (self.published.to_i==1)
-      return true
-    else
-      return false
-    end
+    to_boolean(self.published)
   end
 
   
   protected
   
   spawner do |project|
-    project.name = Faker::Company.catch_phrase
+    project.name = Faker::Company.name
     project.link = Fake::Internet.domain_name
+    project.description =Fake::Company.catch_phrase
   end
 end
