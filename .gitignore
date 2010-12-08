@@ -1,13 +1,37 @@
-.DS_Store
-*.swp
-.hg
-.svn
-*~.nib
-log/*
-config/
-db/redis/*
-webrat.log
-.sass-cache/
+# Mac OSX ignores:
+.DS_Store?
+Icon?
 
-/config.ru
-/config
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# TextMate ignores:
+*.tmproj
+*.tmproject
+tmtags
+
+# vim ignores:
+.*.sw[a-z]
+*.un~
+
+# Rails ignores:
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+config/*.yml
+rerun.txt
