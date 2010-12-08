@@ -35,3 +35,8 @@ capybara-*.html
 **.orig
 config/*.yml
 rerun.txt
+Gemfile.lock
+
+# MongoDB ignores:
+db/local*
+db/mongod.lock
