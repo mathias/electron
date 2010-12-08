@@ -1,5 +1,6 @@
 # Mac OSX ignores:
 .DS_Store?
+.DS_Store
 Icon?
 
 # Thumbnails
