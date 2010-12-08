@@ -7,6 +7,8 @@ source 'http://gemcutter.org'
 gem "rails", "3.0.1"
 gem "mongo_mapper"
 gem "omniauth"
+gem "haml"
+
 if defined?(BSON_C)
   warn 'YAY'
 end
