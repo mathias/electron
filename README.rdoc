@@ -2,9 +2,9 @@
 
 A portfolio engine for awesome software developers. It slices, dices, and makes an amazing martini.
 
-It uses Rails 3, MongoDB, and Blueprint.css to be the best little portfolio engine on NoSQL.
+It uses Rails 3, MongoDB, and Blueprint.css for great justice!
 
-The relevant files are:
+The relevant files for MongoDB are:
 
 * config/application.rb
 * Gemfile
