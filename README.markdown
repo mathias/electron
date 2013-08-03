@@ -1,3 +1,10 @@
+
+## WARNING
+
+As of August 3, 2013, this project has been unmaintained for a long time. I do not recommend using it for anything other than a reference. It also represents some really old coding on my part, so don't read into it too much.
+
+---
+
 Electron
 ========
 
